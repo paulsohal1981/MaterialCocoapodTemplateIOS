@@ -12,6 +12,8 @@
 		2D3B1ACC1E43D43700ABAC66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3B1ACA1E43D43700ABAC66 /* Main.storyboard */; };
 		2D3B1ACE1E43D43700ABAC66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3B1ACD1E43D43700ABAC66 /* Assets.xcassets */; };
 		2D3B1AD11E43D43700ABAC66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3B1ACF1E43D43700ABAC66 /* LaunchScreen.storyboard */; };
+		2DE1CC511E452DDD00881C39 /* RESTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE1CC501E452DDD00881C39 /* RESTService.swift */; };
+		2DE1CC541E45302300881C39 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE1CC531E45302300881C39 /* Country.swift */; };
 		F3F95C55017066EAA47DD68D /* Pods_MaterialCocoaPodTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B545B128FB449CD1F53ABB0 /* Pods_MaterialCocoaPodTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		2D3B1ACD1E43D43700ABAC66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3B1AD01E43D43700ABAC66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3B1AD21E43D43700ABAC66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE1CC501E452DDD00881C39 /* RESTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTService.swift; sourceTree = "<group>"; };
+		2DE1CC531E45302300881C39 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		4891D66AB3E9CD39149598A6 /* Pods-MaterialCocoaPodTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialCocoaPodTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialCocoaPodTemplate/Pods-MaterialCocoaPodTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		5B545B128FB449CD1F53ABB0 /* Pods_MaterialCocoaPodTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialCocoaPodTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99598042E59A6A62950D13D /* Pods-MaterialCocoaPodTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialCocoaPodTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialCocoaPodTemplate/Pods-MaterialCocoaPodTemplate.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 		2D3B1AC51E43D43700ABAC66 /* MaterialCocoaPodTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				2DE1CC521E452F9900881C39 /* Models */,
+				2DE1CC4F1E452DA400881C39 /* Services */,
 				2D3B1AC61E43D43700ABAC66 /* AppDelegate.swift */,
 				2D3B1AC81E43D43700ABAC66 /* ViewController.swift */,
 				2D3B1ACA1E43D43700ABAC66 /* Main.storyboard */,
@@ -69,6 +75,22 @@
 				2D3B1AD21E43D43700ABAC66 /* Info.plist */,
 			);
 			path = MaterialCocoaPodTemplate;
+			sourceTree = "<group>";
+		};
+		2DE1CC4F1E452DA400881C39 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2DE1CC501E452DDD00881C39 /* RESTService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		2DE1CC521E452F9900881C39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2DE1CC531E45302300881C39 /* Country.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		AD441B4D20BEB014638F7FCC /* Frameworks */ = {
@@ -211,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE1CC541E45302300881C39 /* Country.swift in Sources */,
 				2D3B1AC91E43D43700ABAC66 /* ViewController.swift in Sources */,
 				2D3B1AC71E43D43700ABAC66 /* AppDelegate.swift in Sources */,
+				2DE1CC511E452DDD00881C39 /* RESTService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +398,7 @@
 				2D3B1AD71E43D43700ABAC66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

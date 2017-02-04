@@ -21,5 +21,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func RestService(_ sender: Any) {
+        let restService:RESTService = RESTService()
+        
+        restService.GetCountryCodes(success: displayCountries)
+    
+    }
+    
+    func displayCountries(countires:[Country]) -> Void {
+        _ = countires.count
+    }
+    
 }
 
